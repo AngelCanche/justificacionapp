@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
 
-color() {
+
+import 'package:flutter/material.dart';
+import 'package:justifications/pages/login_page.dart';
+
+color(BuildContext context) {
   return AppBar(
     centerTitle: true,
     title: Image(
@@ -9,7 +12,23 @@ color() {
     backgroundColor: Color.fromARGB(255, 66, 1, 1),
     actions: [
       IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-      IconButton(onPressed: () {}, icon: Icon(Icons.login)),
+      icon(context)
     ],
   );
 }
+
+
+icon(BuildContext context){
+  return IconButton(onPressed: () {
+        final route = MaterialPageRoute(
+          builder: (context){
+            return LoginPage();
+          } 
+          );
+           Navigator.push(context, route);
+      }, icon: Icon(Icons.login));
+}
+
+
+
+

@@ -1,49 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:justifications/widgets/appbar.dart';
+import 'package:justifications/widgets/cards.dart';
 import 'package:justifications/widgets/drawer.dart';
 
+class ListaPage extends StatelessWidget {
 
-//import '../utils/color.dart';
-import '../widgets/appbar.dart';
-import '../widgets/cards.dart';
-
-class HomePage extends StatelessWidget {
- 
-  bool _isDrawerExpanded = false;
-  
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       
       drawer: menu(context),
       appBar: color(context),
       
       body: ListView(
-        padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(15.0),
         children: [
-          card1(context),
-          SizedBox(
-            height: 20,
-            
-          ),
-          card2(),
+          cardlistAlumnos(),
           SizedBox(
             height: 20,
           ),
-          card3(),
+          cardlistAlumnos2(),
           SizedBox(
             height: 20,
           ),
-          card4(),
+          cardlistAlumnos3(),
           SizedBox(
             height: 20,
           ),
-          card5(),
         ],
       ),
       
       
     );
   }
-  
 }
