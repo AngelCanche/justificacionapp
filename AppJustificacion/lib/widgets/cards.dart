@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 //Card - Programación
-Widget card1() {
+Widget card1(BuildContext context) {
   final card = TextButton(
     onPressed: () {
-      print('click');
+      Navigator.pushReplacementNamed(context, 'lista');
     },
     child: Container(
       child: Column(children: <Widget>[
@@ -192,6 +192,110 @@ Widget card5() {
             offset: Offset(2.0, 10.0)),
       ],
       borderRadius: BorderRadius.circular(30.0),
+    ),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(30.0),
+      child: card,
+    ),
+  );
+}
+
+Widget cardlistAlumnos() {
+  final card = TextButton(
+    onPressed: () {
+      print('click');
+    },
+    child: Container(
+      child: Column(children: <Widget>[
+        ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Text('3213141 Pablo Lopez',
+              style: TextStyle(color: Colors.white)),
+        ),
+      ]),
+    ),
+  );
+  return Container(
+    decoration: BoxDecoration(
+      color: Colors.black,
+      boxShadow: <BoxShadow>[
+        BoxShadow(
+            color: Colors.black26,
+            blurRadius: 10.0,
+            spreadRadius: 2.0,
+            offset: Offset(2.0, 10.0)),
+      ],
+      borderRadius: BorderRadius.circular(20.0),
+    ),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(30.0),
+      child: card,
+    ),
+  );
+}
+
+Widget cardlistAlumnos2() {
+  final card = TextButton(
+    onPressed: () {
+      print('click');
+    },
+    child: Container(
+      child: Column(children: <Widget>[
+        ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Text(
+            '86904897 Jose Mendez',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+      ]),
+    ),
+  );
+  return Container(
+    decoration: BoxDecoration(
+      color: Colors.black,
+      boxShadow: <BoxShadow>[
+        BoxShadow(
+            color: Colors.black26,
+            blurRadius: 10.0,
+            spreadRadius: 2.0,
+            offset: Offset(2.0, 10.0)),
+      ],
+      borderRadius: BorderRadius.circular(20.0),
+    ),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(30.0),
+      child: card,
+    ),
+  );
+}
+
+Widget cardlistAlumnos3() {
+  final card = TextButton(
+    onPressed: () {
+      print('click');
+    },
+    child: Container(
+      child: Column(children: <Widget>[
+        ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Text('79853758 Mike Canul',
+              style: TextStyle(color: Colors.white)),
+        ),
+      ]),
+    ),
+  );
+  return Container(
+    decoration: BoxDecoration(
+      color: Colors.black,
+      boxShadow: <BoxShadow>[
+        BoxShadow(
+            color: Colors.black26,
+            blurRadius: 10.0,
+            spreadRadius: 2.0,
+            offset: Offset(2.0, 10.0)),
+      ],
+      borderRadius: BorderRadius.circular(20.0),
     ),
     child: ClipRRect(
       borderRadius: BorderRadius.circular(30.0),
