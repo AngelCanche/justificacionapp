@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 colorR() {
-  return  AppBar(
-        backgroundColor: Colors.red.shade900,
-       
-      );
+  return AppBar(
+    backgroundColor: Color.fromARGB(255, 66, 1, 1),
+  );
 }
